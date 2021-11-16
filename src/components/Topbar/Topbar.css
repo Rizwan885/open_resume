@@ -1,0 +1,194 @@
+.topbar {
+  width: 100%;
+  height: 70px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, black), to(crimson));
+  background: linear-gradient(to top, black 2%, crimson);
+  position: fixed;
+  top: 0;
+  color: white;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  z-index: 3;
+}
+
+.topbar .wrapper {
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.topbar .wrapper .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .topbar .wrapper .left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topbar .wrapper .left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.topbar .wrapper .left .logo {
+  font-size: 40px;
+  text-decoration: none;
+  color: inherit;
+  width: 20%;
+  margin-right: 20px;
+  text-shadow: 2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar .wrapper .left .logo {
+    font-size: 30px;
+  }
+}
+
+.topbar .wrapper .left .itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .topbar .wrapper .left .itemContainer {
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topbar .wrapper .left .itemContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topbar .wrapper .left .itemContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.topbar .wrapper .left .icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar .wrapper .left .icon {
+    font-size: 13px;
+    margin-right: 0;
+  }
+}
+
+.topbar .wrapper .left span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar .wrapper .left span {
+    font-size: 12px;
+  }
+}
+
+.topbar .wrapper .right .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 32px;
+  height: 25px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.topbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.topbar.active {
+  background-color: white;
+  color: white;
+}
+
+.topbar.active .hamburger {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.topbar.active .hamburger span:first-child {
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.topbar.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.topbar.active .hamburger span:last-child {
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*# sourceMappingURL=Topbar.css.map */

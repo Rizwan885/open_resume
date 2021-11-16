@@ -1,0 +1,222 @@
+.contact {
+  background-image: url("../../bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .left {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, black), to(crimson));
+  background: linear-gradient(to top, black 2%, crimson);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.contact .left img {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, black), to(crimson));
+  background: linear-gradient(to top, black 2%, crimson);
+  height: 100%;
+}
+
+.contact .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .right {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+.contact .right h2 {
+  font-size: 30px;
+}
+
+.contact .right form {
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  background-color: rgba(200, 200, 200, 0.07);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.07);
+}
+
+.contact .right form input {
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+  background-color: rgba(200, 200, 200, 0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .right form input {
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .right form input {
+    width: 70%;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+.contact .right form input:focus {
+  border: 2px solid rgba(200, 200, 200, 0.3);
+}
+
+.contact .right form input::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
+.contact .right form input:-ms-input-placeholder {
+  font-size: 20px;
+}
+
+.contact .right form input::-ms-input-placeholder {
+  font-size: 20px;
+}
+
+.contact .right form input::placeholder {
+  font-size: 20px;
+}
+
+.contact .right form textarea {
+  width: 300px;
+  height: 200px;
+  font-size: 14px;
+  background-color: rgba(200, 200, 200, 0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.contact .right form textarea:focus {
+  border: 2px solid rgba(200, 200, 200, 0.3);
+}
+
+.contact .right form textarea::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
+.contact .right form textarea:-ms-input-placeholder {
+  font-size: 20px;
+}
+
+.contact .right form textarea::-ms-input-placeholder {
+  font-size: 20px;
+}
+
+.contact .right form textarea::placeholder {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .right form textarea {
+    width: 200px;
+    height: 200px;
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .right form textarea {
+    width: 70%;
+    height: 300px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact .right form button {
+  width: 290px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact .right form button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .right form button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .right form button {
+    width: 290px;
+    height: 50px;
+    font-size: 20px;
+    font-size: 14;
+  }
+}
+
+.contact .right form span {
+  color: green;
+}
+/*# sourceMappingURL=Contact.css.map */

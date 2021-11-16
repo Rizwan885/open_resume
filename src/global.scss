@@ -1,0 +1,45 @@
+// $mainColor: #15023a;
+
+$mainColor: linear-gradient(to top, black 2%, crimson);
+
+$color: white;
+
+$xxl-width: 1400px;
+$xl-width: 1400px;
+$lg-width: 1200px;
+$md-width: 768px;
+$sm-width: 600px;
+$xsm-width: 576px;
+@mixin xxl {
+  @media screen and (max-width: #{$xxl-width}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width: #{$xl-width}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: #{$md-width}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$sm-width}) {
+    @content;
+  }
+}
+@mixin xs {
+  @media (min-width: #{$xs-width}) {
+    @content;
+  }
+}

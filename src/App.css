@@ -1,0 +1,18 @@
+.app {
+  height: 100vh;
+  padding: 0;
+}
+
+.app .sections {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  top: 70px;
+  scrollbar-width: none;
+}
+
+.app .sections > * {
+  width: 100vw;
+  height: calc(100vh - 70px);
+}
+/*# sourceMappingURL=App.css.map */
